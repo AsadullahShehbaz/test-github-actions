@@ -6,13 +6,13 @@ on:
     branches: [main]
 jobs:
   test:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
       - name: Setup Python 
         uses: actions/setup-python@v6
         with:
-          python_version: "3.14"
+          python-version: "3.14"
 
       - name: Install Dependencies
         run: |
